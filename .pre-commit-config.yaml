@@ -1,7 +1,7 @@
 repos:
     # Validación de paquetes de terceros para el isort
 -   repo: https://github.com/asottile/seed-isort-config
-    rev: v2.1.0
+    rev: v2.2.0
     hooks:
     -   id: seed-isort-config
         # Declaramos donde se encuentra el código
@@ -10,12 +10,12 @@ repos:
     # FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER
     # https://www.python.org/dev/peps/pep-0008/#imports
 -   repo: https://github.com/pre-commit/mirrors-isort
-    rev: v4.3.21
+    rev: v5.6.4
     hooks:
     -   id: isort
         additional_dependencies: ['toml']
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.5.0
+    rev: v3.3.0
     hooks:
         # Validar que al final de un documento exista un salto de linea
     -   id: end-of-file-fixer
@@ -27,6 +27,6 @@ repos:
     -   id: check-ast
     # Validar el Flake 8 de archivos que se cambiaron
 -   repo: https://gitlab.com/pycqa/flake8
-    rev: 3.7.9
+    rev: 3.8.4
     hooks:
     -   id: flake8
