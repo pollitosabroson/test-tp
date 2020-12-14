@@ -1,0 +1,8 @@
+github:
+  url: https://github.com
+  prefix_search: 'search'
+  params:
+    keywords: 'q'
+    type: 'type'
+  queries:
+    search_repo_links: '.repo-list-item .mt-n1 .f4 a'
